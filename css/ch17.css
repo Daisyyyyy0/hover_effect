@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 45px;
+  padding: 40px 80px;
+}
+
+a {
+  letter-spacing: 2px;
+  border: 5px solid #333;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  z-index: -1;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  z-index: -1;
+}
+
+a:hover {
+  color: white;
+}
+
+a:hover::before {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+a:hover::after {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+/*# sourceMappingURL=ch17.css.map */

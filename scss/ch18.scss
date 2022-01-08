@@ -1,0 +1,17 @@
+@import "layout";
+
+a{
+    font-family: 'Roboto',sans-serif;
+    color: #E1332D;
+    border: 3px solid #E1332D;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    transition: all .3s;
+    &:hover{
+        font-weight: 900;
+        letter-spacing: 10px;
+        border: 7px solid #E1332D;
+    }
+}

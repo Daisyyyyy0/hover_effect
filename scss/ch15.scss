@@ -2,7 +2,6 @@
 
 a {
     border: 5px solid #333;
-    padding: 40px 80px;
     position: relative;
     overflow: hidden;    //這行是關鍵,可以試著註解這行觀看變化
     &::before{

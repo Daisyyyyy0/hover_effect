@@ -1,0 +1,33 @@
+@import "layout";
+
+a {
+    color: #351415;
+    border: 3px solid #351415;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden; //這行是關鍵,可以試著註解這行觀看變化
+
+    &::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: #351415;
+
+        transition: all 1s;
+        // transform: translateX(-100%);
+        transform: translateY(-100%);
+    }
+
+    &:hover{
+        color: white;
+        &::before {
+            // transform: translateX(0);
+            transform: translateY(0);
+        }
+    }
+    
+}

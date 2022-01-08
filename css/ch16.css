@@ -27,8 +27,11 @@ a {
 }
 
 a {
-  border: 5px solid #333;
+  color: #351415;
+  border: 3px solid #351415;
   position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   overflow: hidden;
 }
 
@@ -37,25 +40,22 @@ a::before {
   position: absolute;
   left: 0;
   top: 0;
-  background: #fff200;
   height: 100%;
   width: 100%;
   z-index: -1;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  background: #351415;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
-a::before {
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+a:hover {
+  color: white;
 }
 
 a:hover::before {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
-/*# sourceMappingURL=ch15.css.map */
+/*# sourceMappingURL=ch16.css.map */
