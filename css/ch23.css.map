@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AACD,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,YAAY;EACrB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,SAAS;CACrB",
+    "sources": [
+        "../scss/ch23.scss",
+        "../scss/_layout.scss"
+    ],
+    "names": [],
+    "file": "ch23.css"
+}

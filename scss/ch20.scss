@@ -1,0 +1,36 @@
+@import "layout";
+
+.container {
+    background: #222;
+}
+
+a {
+    color: white;
+    border: 3px solid white;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden; //這行是關鍵,可以試著註解這行觀看變化
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 50px;
+        width: 110%;
+        // z-index: -1;
+        background: white;
+        transition: all 1s;
+        transform: translateX(-100%) rotate(45deg);
+    }
+
+    &:hover {
+        background: orangered;
+        color: white;
+
+        &::before {
+            transform: translateX(100%) rotate(45deg);
+        }
+    }
+
+}
