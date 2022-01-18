@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 45px;
+  padding: 40px 80px;
+}
+
+.container {
+  background-color: #333;
+}
+
+button {
+  position: relative;
+  color: white;
+}
+/*# sourceMappingURL=32.css.map */

@@ -1,0 +1,78 @@
+@import "layout";
+
+.container {
+    background-color: #333;
+}
+
+button{
+    position: relative;
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 400px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 45px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        transition: all .5s;
+    }
+    &::before{
+        top: 0;
+        left: -100%;
+    }
+    &::after{
+        bottom: 0;
+        right: -100%;
+    }
+
+    span {
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background-color: #fff;
+            transition: all .3s;
+        }
+
+        &::before {
+            top: -100%;
+            right: 0;
+        }
+
+        &::after {
+            bottom: -100%;
+            left: 0;
+        }
+    }
+
+    &:hover{
+        &::before{
+            left: 0;
+        }
+        &::after{
+            right: 0;
+        }
+        span{
+            &::before {
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+    }
+    
+}
