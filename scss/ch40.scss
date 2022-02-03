@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(-15deg);
+        }
+        .caption{
+            transform: translateX(0);
+        }
+    }
+}
+
+img {
+    width: 100%;
+    transition: all .3s;
+
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all .3s;
+    // opacity: 0;
+    transform: translateX(-100%);
+    background-color: rgba(0, 0, 0, .25);
+
+    h1 {
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,71 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: black;
+}
+
+.caption h1 {
+  text-transform: uppercase;
+}
+
+.caption p {
+  font-size: 18px;
+}
+
+.container:hover img {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.container:hover .caption {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=ch41.css.map */
